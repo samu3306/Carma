@@ -1,0 +1,79 @@
+# Project virtual environment
+.venv/
+
+# Python caches and temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+*.tmp
+*.temp
+~$*
+
+# Model weights and exported models
+models/
+weights/
+checkpoints/
+*.ckpt
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Runtime models required by the lightweight team demo.
+!models/
+models/*
+!models/yolov4-tiny.cfg
+!models/yolov4-tiny.weights
+!models/dinov2_angle_classifier/
+models/dinov2_angle_classifier/*
+!models/dinov2_angle_classifier/angle_metadata.npz
+!models/dinov2_angle_classifier/angle_svm.xml
+!models/dinov2_angle_classifier/dinov2_vits14_matmul_int8.onnx
+
+# Runtime uploads (source datasets elsewhere in this repository are unaffected)
+uploads/
+uploaded_images/
+downloaded_images/
+
+# SQLite databases and sidecar files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Local temporary directories
+tmp/
+temp/
+.cache/
+
+# Frontend and local environment
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+.env
+.env.*
+!.env.example
+npm-debug.log*
+
+
+# Derived dataset views and labeling exports
+datasets/
+data/
+outputs/
+沒有進行索賠/
+進行索賠資料/
+取車流程圖.png
+還車流程圖.png
+*.xlsx
+*.orig

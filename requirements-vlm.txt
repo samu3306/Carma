@@ -1,0 +1,6 @@
+# Install only after confirming the existing CUDA-compatible PyTorch environment.
+# PyTorch is intentionally not pinned or installed here.
+transformers>=4.57
+accelerate>=1.0
+Pillow>=11.2
+openpyxl>=3.1

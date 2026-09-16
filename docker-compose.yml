@@ -1,0 +1,22 @@
+services:
+  carma:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: ["8080:8080"]
+    environment:
+      CARMA_DATABASE_URL: sqlite:////data/carma.db
+      CARMA_UPLOAD_DIR: /data/uploads
+      CARMA_ANALYSIS_DIR: /data/uploads/analysis
+      CARMA_STORAGE_BACKEND: local
+      CARMA_SEED_ON_STARTUP: "true"
+    volumes:
+      - carma_data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 8
+      start_period: 45s
+volumes:
+  carma_data:

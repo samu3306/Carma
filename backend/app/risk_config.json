@@ -1,0 +1,18 @@
+{
+  "weights": {
+    "damage": 0.38,
+    "cleanliness": 0.18,
+    "quality": 0.14,
+    "confidence": 0.08,
+    "missing_views": 0.12,
+    "manual_review": 0.10
+  },
+  "thresholds": {
+    "green_max": 29,
+    "yellow_max": 69,
+    "damage_suspected": 0.12,
+    "damage_high": 0.30,
+    "angle_mismatch": 0.18
+  },
+  "required_views": ["left_front", "right_front", "left_rear", "right_rear", "interior_front", "interior_rear"]
+}
