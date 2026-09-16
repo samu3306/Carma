@@ -1,8 +1,8 @@
 # Carma
 
-隊友若要快速啟動完整 MVP，請先看 [TEAM_SETUP.md](TEAM_SETUP.md)。
+若要快速啟動完整 MVP，請先看 [TEAM_SETUP.md](TEAM_SETUP.md)。
 
-本專案的 Python 相依套件一律安裝在專案根目錄的 `.venv`，不可安裝到系統 Python，也不使用 Conda。優先使用 Python 3.11。
+專案的相依套件一律安裝在專案根目錄的 `.venv`。優先使用 Python 3.11。
 
 ## Windows（PowerShell）
 
